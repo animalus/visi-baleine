@@ -5,11 +5,9 @@
 - [Introduction](#introduction)
 - [Building the Docker image](#building-the-docker-image)
 - [Testing with sample images](#testing-with-sample-images)
-- [Contributors and Acknowledgments](#contributors-and-acknowledgments)
-- [Licenses](#licenses)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
 - [Reference](#reference)
-  - [Citation](#citation)
-
 
 ## Introduction
 

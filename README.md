@@ -26,11 +26,11 @@ sudo docker build .
 
 Images of two blue whales (B271 and B275) are bundled with the source code to allow for a quick test. Once the Docker image is built, simply type:
 ```shell
-docker run -v .:/input <image name> query1.jpg
+docker run -v .:/input <image name> /input/query1.jpg
 ```
 or
 ```shell
-nvidia-docker run -v .:/input <image name> query1.jpg
+nvidia-docker run -v .:/input <image name> /input/query1.jpg
 ```
 
 The output should be:
@@ -44,21 +44,19 @@ B275:23.913230895996094 -> Most likely candidate
 B271:9.846597671508789 
 ```
 
-## Contributors and Acknowledgments
+## Acknowledgments
 
 * LoFTR: https://github.com/zju3dv/LoFTR
 
 * BASNet: https://github.com/xuebinqin/BASNet
 
-## Licenses
+## License
 
-<br><br>
+This work is released under an MIT license.
 
 ## Reference
 
 Please reference this work using the following citation.
-
-### Citation
 
 ```bibtex
 @inproceedings{inproceedings,

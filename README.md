@@ -30,11 +30,11 @@ sudo docker build .
 
 Images of two blue whales (B271 and B275) are bundled with the source code to allow for a quick test. Once the Docker image is built, simply type:
 ```shell
-docker run -v .:/input <image name> /input/query1.jpg
+docker run -v $PWD:/input <docker image name> /input/query1.jpg
 ```
 for CPU execution or
 ```shell
-nvidia-docker run -v .:/input <image name> /input/query1.jpg
+nvidia-docker run -v $PWD:/input <docker image name> /input/query1.jpg
 ```
 for GPU execution.
 

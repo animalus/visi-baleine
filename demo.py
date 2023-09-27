@@ -139,7 +139,7 @@ img0_raw = cv2.imread(whaleimfname, cv2.IMREAD_GRAYSCALE)
 if img0_raw is None or mask is None:
      print("Can't read input image")
      exit(1)
-print("after mask")
+#print("after mask")
 img0_raw = cv2.bitwise_and(img0_raw, img0_raw, mask=mask)
 img0_raw = autocrop(img0_raw)
 img0_raw = cv2.resize(img0_raw, (720,192)) # input size shuold be divisible by 8

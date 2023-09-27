@@ -16,7 +16,7 @@ This repo contains the source code accompanying the paper "[Automated blue whale
 
 ## Downloading the models
 
-Two models need to be downloaded and saved in the "models" folder. The semantic segmentation model (basnet_fsi.pth) can be found here: https://drive.google.com/file/d/1YVgw9AzOMEIxJfurRRu-OFasAV5IHCBN/view?usp=sharing. The LofTR matching model (outdoor_ds.ckpt) is found here: https://drive.google.com/file/d/1uzG_AVs2qws-z8d9m5n0m_Fwd3T9FsQy/view?usp=sharing. 
+Two models need to be downloaded and saved in a "models" folder. The semantic segmentation model (basnet_fsi.pth) can be found here: https://drive.google.com/file/d/1YVgw9AzOMEIxJfurRRu-OFasAV5IHCBN/view?usp=sharing. The LofTR matching model (outdoor_ds.ckpt) is found here: https://drive.google.com/file/d/1uzG_AVs2qws-z8d9m5n0m_Fwd3T9FsQy/view?usp=sharing. 
 
 ## Building the Docker image
 

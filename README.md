@@ -11,6 +11,8 @@
 
 ## Introduction
 
+This repo contains the source code accompanying the paper "[Automated blue whale photo-identification using local feature matching](https://www.researchgate.net/publication/364141248_Automated_blue_whale_photo-identification_using_local_feature_matching)". Its purpose is to show that new local feature matching techniques such as LoFTR (or SuperGlue or HardNet or ...) can be used successfully to photo-identify blue whales (balaenoptera musculus). Good results have also been obtained for fin whales, i.e. balaenoptera physalus. The process is as follows: the image is first segmented to isolate the whale's body from the background, then a feature matcher finds correspondences between the segmented image and reference images from known whale individuals. The most likely candidate is the one with the "best" correspondences between its reference images and the image being analyzed. Since the approach is totally generic, it should be easy to adapt it to the photo-identification of other species.
+
 ## Building the Docker image
 
 In order to facilitate the use of the provided source code, a Dockerfile is supplied with
@@ -26,10 +28,11 @@ Images of two blue whales (B271 and B275) are bundled with the source code to al
 ```shell
 docker run -v .:/input <image name> /input/query1.jpg
 ```
-or
+for CPU execution or
 ```shell
 nvidia-docker run -v .:/input <image name> /input/query1.jpg
 ```
+for GPU execution.
 
 The output should be:
 ```

@@ -97,7 +97,8 @@ with open(dset_name) as fm:
         whale = matchline.split('/')[0]
         fname=matchline.split('/')[1]
 
-        img0_pth = os.path.join("/opt/"+IMAGE_DIR,fname)
+        # img0_pth = os.path.join("/opt/"+IMAGE_DIR,fname)
+        img0_pth = os.path.join(IMAGE_DIR,fname)
         #print(img0_pth)
         img0_raw = cv2.imread(img0_pth, cv2.IMREAD_GRAYSCALE)
         if img0_raw is None:

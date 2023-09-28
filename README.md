@@ -1,5 +1,12 @@
 # Blue whale photo-identification with LoFTR <!-- omit in toc -->
 
+## ANIMALUS Update
+
+```sh
+ln -s /data/algos/visi-baleine/models models
+poetry run python demo.py query1.jpg
+```
+
 ## Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
